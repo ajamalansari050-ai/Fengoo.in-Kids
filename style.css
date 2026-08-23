@@ -1,13 +1,3 @@
-/* =========================================
-   KIDS LEARNING WEBSITE
-   Main Stylesheet
-========================================= */
-
-
-/* =========================================
-   RESET
-========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,35 +15,23 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   GENERAL
-========================================= */
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 .container {
     width: 92%;
     max-width: 1150px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .site-header {
     background: #ffffff;
-    border-bottom: 1px solid #e9edf3;
+    border-bottom: 1px solid #e7ebf2;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -71,20 +49,18 @@ img {
     font-size: 24px;
     font-weight: 800;
     color: #246bfd;
-    white-space: nowrap;
 }
 
 .navigation {
     display: flex;
-    align-items: center;
     gap: 28px;
 }
 
 .navigation a {
+    color: #444;
     font-size: 15px;
     font-weight: 600;
-    color: #444;
-    transition: 0.25s ease;
+    transition: 0.25s;
 }
 
 .navigation a:hover {
@@ -92,9 +68,7 @@ img {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
     background: linear-gradient(
@@ -104,67 +78,58 @@ img {
         #fff1f7
     );
     padding: 90px 0;
-    overflow: hidden;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 .hero-text {
-    max-width: 750px;
-    margin: 0 auto;
+    max-width: 760px;
+    margin: auto;
 }
 
 .hero-label {
     display: inline-block;
-    background: #ffffff;
+    background: white;
+    color: #246bfd;
     padding: 8px 18px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 700;
-    color: #246bfd;
     margin-bottom: 18px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
 .hero h1 {
     font-size: 54px;
     line-height: 1.15;
-    margin-bottom: 18px;
     color: #18233a;
+    margin-bottom: 18px;
 }
 
 .hero p {
     max-width: 620px;
-    margin: 0 auto 30px;
+    margin: auto auto 30px;
     font-size: 19px;
     color: #5e6675;
 }
 
 .hero-button {
     display: inline-block;
-    padding: 14px 26px;
-    border-radius: 12px;
+    padding: 14px 28px;
     background: #246bfd;
-    color: #ffffff;
+    color: white;
+    border-radius: 12px;
     font-weight: 700;
-    transition: 0.25s ease;
-    box-shadow: 0 8px 20px rgba(36, 107, 253, 0.22);
+    transition: 0.25s;
 }
 
 .hero-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(36, 107, 253, 0.28);
 }
 
 
-/* =========================================
-   PACKS SECTION
-========================================= */
+/* PACK SECTION */
 
 .packs-section {
     padding: 80px 0;
@@ -178,29 +143,23 @@ img {
 }
 
 .section-heading span {
-    display: inline-block;
+    color: #246bfd;
     font-size: 14px;
     font-weight: 700;
-    color: #246bfd;
-    margin-bottom: 8px;
 }
 
 .section-heading h2 {
     font-size: 36px;
-    line-height: 1.2;
     color: #18233a;
-    margin-bottom: 12px;
+    margin: 8px 0 12px;
 }
 
 .section-heading p {
     color: #697386;
-    font-size: 16px;
 }
 
 
-/* =========================================
-   PACK GRID
-========================================= */
+/* GRID */
 
 .packs-grid {
     display: grid;
@@ -209,35 +168,33 @@ img {
 }
 
 
-/* =========================================
-   PACK CARD
-========================================= */
+/* CARD */
 
 .pack-card {
-    background: #ffffff;
+    background: white;
     border: 1px solid #e7ebf2;
     border-radius: 20px;
     padding: 30px 24px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(25, 40, 70, 0.06);
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .pack-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(25, 40, 70, 0.11);
+    box-shadow: 0 15px 35px rgba(25, 40, 70, 0.12);
 }
 
 .pack-icon {
     width: 90px;
     height: 90px;
-    margin: 0 auto 20px;
+    margin: auto auto 20px;
     border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
     background: #f0f5ff;
+    font-size: 50px;
 }
 
 .pack-content h3 {
@@ -249,14 +206,11 @@ img {
 .pack-content p {
     color: #697386;
     font-size: 15px;
-    min-height: 50px;
     margin-bottom: 25px;
 }
 
 
-/* =========================================
-   DOWNLOAD BUTTONS
-========================================= */
+/* BUTTONS */
 
 .pack-buttons {
     display: flex;
@@ -269,12 +223,12 @@ img {
     align-items: center;
     justify-content: center;
     min-height: 48px;
-    padding: 12px 15px;
+    padding: 12px;
     border-radius: 10px;
-    color: #ffffff;
+    color: white;
     font-size: 14px;
     font-weight: 700;
-    transition: 0.25s ease;
+    transition: 0.25s;
 }
 
 .image-button {
@@ -290,70 +244,77 @@ img {
     opacity: 0.9;
 }
 
-.download-button:active {
-    transform: translateY(0);
-}
 
-
-/* =========================================
-   ABOUT
-========================================= */
+/* ABOUT */
 
 .about-section {
     padding: 80px 0;
-    background: #ffffff;
+    background: white;
 }
 
 .about-content {
     max-width: 750px;
     text-align: center;
-    margin: 0 auto;
+}
+
+.about-content {
+    margin: auto;
 }
 
 .about-label {
-    display: inline-block;
     color: #246bfd;
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .about-content h2 {
     font-size: 34px;
-    line-height: 1.25;
     color: #18233a;
-    margin-bottom: 15px;
+    margin: 10px 0 15px;
 }
 
 .about-content p {
     color: #697386;
-    font-size: 16px;
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 .site-footer {
     background: #18233a;
-    color: #ffffff;
-    padding: 28px 0;
+    color: white;
+    padding: 30px 0;
 }
 
 .footer-content {
     text-align: center;
 }
 
-.footer-content p {
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
     font-size: 14px;
-    color: #d9dfeb;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    color: #ffd166;
+}
+
+.footer-content p {
+    color: #cbd3e1;
+    font-size: 14px;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -361,20 +322,13 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        padding: 75px 0;
-    }
-
     .hero h1 {
         font-size: 46px;
     }
-
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 650px) {
 
@@ -383,7 +337,7 @@ img {
     }
 
     .logo {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .navigation {
@@ -414,20 +368,13 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .pack-card {
-        padding: 28px 20px;
-    }
-
     .about-content h2 {
         font-size: 29px;
     }
-
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
+/* SMALL MOBILE */
 
 @media (max-width: 400px) {
 
@@ -437,9 +384,8 @@ img {
 
     .header-content {
         flex-direction: column;
-        justify-content: center;
-        gap: 5px;
         padding: 12px 0;
+        gap: 7px;
     }
 
     .navigation {
@@ -453,9 +399,4 @@ img {
     .hero-button {
         width: 100%;
     }
-
-    .packs-section {
-        padding: 60px 0;
-    }
-
-}
+       }
