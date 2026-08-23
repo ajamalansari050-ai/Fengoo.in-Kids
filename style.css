@@ -1,0 +1,461 @@
+/* =========================================
+   KIDS LEARNING WEBSITE
+   Main Stylesheet
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e9edf3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #246bfd;
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navigation a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    transition: 0.25s ease;
+}
+
+.navigation a:hover {
+    color: #246bfd;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #dff5ff,
+        #eef1ff,
+        #fff1f7
+    );
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    display: inline-block;
+    background: #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #246bfd;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.hero h1 {
+    font-size: 54px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    color: #18233a;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    font-size: 19px;
+    color: #5e6675;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 12px;
+    background: #246bfd;
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.25s ease;
+    box-shadow: 0 8px 20px rgba(36, 107, 253, 0.22);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(36, 107, 253, 0.28);
+}
+
+
+/* =========================================
+   PACKS SECTION
+========================================= */
+
+.packs-section {
+    padding: 80px 0;
+    background: #f7f9fc;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #246bfd;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #18233a;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #697386;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PACK GRID
+========================================= */
+
+.packs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================
+   PACK CARD
+========================================= */
+
+.pack-card {
+    background: #ffffff;
+    border: 1px solid #e7ebf2;
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(25, 40, 70, 0.06);
+    transition: 0.3s ease;
+}
+
+.pack-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(25, 40, 70, 0.11);
+}
+
+.pack-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background: #f0f5ff;
+}
+
+.pack-content h3 {
+    font-size: 24px;
+    color: #202a3d;
+    margin-bottom: 10px;
+}
+
+.pack-content p {
+    color: #697386;
+    font-size: 15px;
+    min-height: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   DOWNLOAD BUTTONS
+========================================= */
+
+.pack-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.image-button {
+    background: #ff9f1c;
+}
+
+.video-button {
+    background: #e83e8c;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.download-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-label {
+    display: inline-block;
+    color: #246bfd;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    line-height: 1.25;
+    color: #18233a;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #697386;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: #18233a;
+    color: #ffffff;
+    padding: 28px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    color: #d9dfeb;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .packs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .header-content {
+        min-height: 65px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .navigation {
+        gap: 14px;
+    }
+
+    .navigation a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .packs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pack-card {
+        padding: 28px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 12px 0;
+    }
+
+    .navigation {
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .packs-section {
+        padding: 60px 0;
+    }
+
+}
