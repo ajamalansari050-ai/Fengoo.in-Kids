@@ -1,0 +1,16 @@
+{
+    "name": "Fengoo.in Kids",
+    "short_name": "Fengoo Kids",
+    "description": "Educational photos and videos for kids.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#246bfd",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]
+}
